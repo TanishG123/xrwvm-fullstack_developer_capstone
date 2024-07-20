@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: darkturquoise;
+        }
+        .navbar h2 {
+            color: #fff;
+        }
+        .navbar-nav .nav-link {
+            font-size: larger;
+            color: #fff;
+        }
+        .navbar-nav .nav-link.active {
+            color: #212529;
+            font-weight: bold;
+        }
+        .contact-container {
+            width: 80%;
+            margin: 5% auto;
+            background-color: #fff;
+            padding: 2%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .contact-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .contact-header h1 {
+            font-size: 2.5em;
+            color: #20c997;
+        }
+        .contact-header img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 2rem;
+        }
+        .contact-item {
+            text-align: center;
+            width: 30%;
+        }
+        .contact-item h2 {
+            font-size: 1.5em;
+            margin-bottom: 1rem;
+        }
+        .contact-item p {
+            font-size: 1.1em;
+            color: #555;
+        }
+    </style>
+    <title>Contact Us</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <h2 style="padding-right: 5%;">Dealerships</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Contact Us</h1>
+            <img src="/static/cars.jpeg" alt="Cars">
+            <p>We'd love to hear from you! Here are some ways to get in touch with us.</p>
+        </div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h2>Visit Us</h2>
+                <p>123 Car Street</p>
+                <p>Austin, TX 78701</p>
+            </div>
+            <div class="contact-item">
+                <h2>Call Us</h2>
+                <p>Phone: (123) 456-7890</p>
+                <p>Fax: (123) 456-7891</p>
+            </div>
+            <div class="contact-item">
+                <h2>Email Us</h2>
+                <p>info@bestcars.com</p>
+                <p>support@bestcars.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/bootstrap.bundle.min.js"></script>
+</body>
+</html>
