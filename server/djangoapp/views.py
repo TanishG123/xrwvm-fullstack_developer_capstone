@@ -87,7 +87,6 @@ def registration(request):
         return JsonResponse(data)
 
 
-# Update the `get_dealerships` render list of dealerships all by default, particular state if state is passed
 def get_dealerships(request, state="All"):
     if state == "All":
         endpoint = "/fetchDealers"
@@ -130,6 +129,11 @@ def add_review(request):
             post_review(data)
             return JsonResponse({"status": 200})
         except Exception as e:
-            return JsonResponse({"status": 401, "message": f"Error in posting review: {e}"})
+            return JsonResponse(
+                {
+                    "status": 401, 
+                    "message": f"Error in posting review: {e}"
+                }
+            )
     else:
         return JsonResponse({"status": 403, "message": "Unauthorized"})
