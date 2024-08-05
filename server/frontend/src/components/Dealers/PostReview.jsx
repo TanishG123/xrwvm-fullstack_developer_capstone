@@ -87,6 +87,7 @@ const PostReview = () => {
   useEffect(() => {
     get_dealer();
     get_cars();
+    console.log(carmodels)
   },[]);
 
 
